@@ -1,0 +1,8 @@
+sqoop import --connect "jdbc:mysql://[HOSTNAME]/[DBNAME]" \
+--username [USERNAME] \
+--password [PASSWORD] \
+--table [TABLENAME] \
+--num-mappers [MAPPERS] \
+--target-dir /usr/sqoopjobauto/[TABLENAME] \
+--autoreset-to-one-mapper
+
